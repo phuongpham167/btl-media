@@ -5,4 +5,9 @@ Rails.application.routes.draw do
   root "static_pages#home"
   get "static_pages/help"
   get "static_pages/about"
+
+  resources :rooms
+  # root "rooms#index"
+  match '/party/:id', :to => "rooms#party", :as => :party, :via => :get
+  
 end
