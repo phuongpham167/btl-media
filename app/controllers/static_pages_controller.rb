@@ -1,10 +1,6 @@
 class StaticPagesController < ApplicationController
   def home
-  end
-
-  def help
-  end
-
-  def about
+    @users = User.all
+    @rooms = Room.all
   end
 end
