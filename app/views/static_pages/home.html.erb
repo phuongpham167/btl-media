@@ -115,82 +115,18 @@
                 <button type="button" class="btn btn-primary btn-block text-left">Call list</button>
             </div>
             <div class="calllist" id="calllist">
-                <h4 style="text-align: center;">Call list</h4>
+                <h4 style="text-align: center;">Person list</h4>
                 <hr>
-                <div class="person">
-                    <div class="col-xs-2 avatar">
-                        <img alt="avatar" src="/assets/anh-1.png" style="width: 40px; height :40px; " />
-                    </div>
-                    <div class="col-xs-10 nameperson">
-                        <a href="#" title="">Phuong Pham</a>
-                        <span class="state"></span>
-                    </div>
-                </div>
-                <div class="person">
-                    <div class="col-xs-2 avatar">
-                        <img src="/assets/anh-1.png" alt="" style="width: 40px; height :40px; ">
-                    </div>
-                    <div class="col-xs-10 nameperson">
-                        <a href="#" title="">Phuong Pham</a>
-                        <span class="state"></span>
-                    </div>
-                </div>
-
-                <div class="person">
-                    <div class="col-xs-2 avatar">
-                        <img src="/assets/anh-1.png" alt="" style="width: 40px; height :40px; ">
-                    </div>
-                    <div class="col-xs-10 nameperson">
-                        <a href="#" title="">Chiến Văn Nguyễn</a>
-                        <span class="state"></span>
-                    </div>
-                </div>
-                <div class="person">
-                    <div class="col-xs-2 avatar">
-                        <img src="/assets/anh-1.png" alt="" style="width: 40px; height :40px; ">
-                    </div>
-                    <div class="col-xs-10 nameperson">
-                        <a href="#" title="">Lạc Lạc</a>
-                        <span class="state"></span>
-                    </div>
-                </div>
-                <div class="person">
-                    <div class="col-xs-2 avatar">
-                        <img src="/assets/anh-1.png" alt="" style="width: 40px; height :40px; ">
-                    </div>
-                    <div class="col-xs-10 nameperson">
-                        <a href="#" title="">Duc Minh Vu</a>
-                        <span class="state"></span>
-                    </div>
-                </div>
-                <div class="person">
-                    <div class="col-xs-2 avatar">
-                        <img src="/assets/anh-1.png" alt="" style="width: 40px; height :40px; ">
-                    </div>
-                    <div class="col-xs-10 nameperson">
-                        <a href="#" title="">Phuong Pham</a>
-                        <span class="state"></span>
-                    </div>
-                </div>
-                <div class="person">
-                    <div class="col-xs-2 avatar">
-                        <img src="/assets/anh-1.png" alt="" style="width: 40px; height :40px; ">
-                    </div>
-                    <div class="col-xs-10 nameperson">
-                        <a href="#" title="">Vũ Minh Quang</a>
-                        <span class="state"></span>
-                    </div>
-                </div>
-                <div class="person">
-                    <div class="col-xs-2 avatar">
-                        <img src="/assets/anh-1.png" alt="" style="width: 40px; height :40px; ">
-                    </div>
-                    <div class="col-xs-10 nameperson">
-                        <a href="#" title="">Phuong Pham</a>
-                        <span class="state"></span>
-                    </div>
-                </div>
-
+                <section class="user_info">
+                  <%= render "shared/user_info" %>
+                </section>
+            </div>
+            <div class="calllist" id="calllist">
+                <h4 style="text-align: center;">Room list</h4>
+                <hr>
+                <section class="user_info">
+                  <%= render "shared/room_info" %>
+                </section>
             </div>
         </div>
     </div>

@@ -1,0 +1,13 @@
+<div>
+  <% @users.each do |user| %>
+    <div class="person">
+        <div class="col-xs-2 avatar">
+            <img alt="avatar" src="/assets/anh-1.png" style="width: 40px; height :40px; " />
+        </div>
+        <div class="col-xs-10 nameperson">
+            <a href="#" title=""><%= user.email %></a>
+            <span class="state"></span>
+        </div>
+    </div>
+  <% end %>
+</div>
