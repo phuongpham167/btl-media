@@ -1,0 +1,9 @@
+<div id="newRoom" style=" padding-top:200px">
+  <fieldset>
+  <legend>Start a new live stream</legend>
+<%= form_for(@new_stream) do |f| %>
+  title: <%= f.text_field :title %><br/><br/>
+  <%= f.submit %>
+<% end %>
+</fieldset>
+</div>

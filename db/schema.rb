@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_29_023732) do
+ActiveRecord::Schema.define(version: 2018_12_12_063333) do
 
   create_table "messages", force: :cascade do |t|
     t.string "content"
@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 2018_11_29_023732) do
     t.integer "counter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "title"
+    t.string "session_id"
     t.index ["user_id"], name: "index_streams_on_user_id"
   end
 
